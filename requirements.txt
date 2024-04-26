@@ -175,6 +175,7 @@ opt-einsum==3.3.0
 optree==0.11.0
 orjson==3.9.15
 overrides==7.7.0
+packaging==23.2
 pandas==1.5.3
 pathable==0.4.3
 pdf2image==1.17.0
