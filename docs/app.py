@@ -28,7 +28,7 @@ def file_explorer_page():
         uploaded_file = st.file_uploader("Upload a ZIP file", type="zip")
     elif file_source == 'Use the default demo file':
         if 'default_file_path' not in st.session_state:
-            st.session_state['default_file_path'] = '/demo.zip'  # Demo.zip 파일의 경로를 설정
+            st.session_state['default_file_path'] = '/docs/demo.zip'  
         uploaded_file = open(st.session_state['default_file_path'], 'rb')
 
     with st.spinner('Embedding the files...'):
