@@ -21,6 +21,12 @@ The primary goal of this project is to extend the capabilities of existing LLM a
 
 Utilizing LangGraph for seamless structuring of the agent and Streamlit for streamlined UI and deployment, Muti_Doc_LLM_Agent provides a user-friendly interface for effortless interaction.
 
+## Potential Future Improvement
+
+1. Pdf Viewr (Multi-Window for the docs(csv or pdf)
+2. Extension of file type (from only pdf, csv to others)
+3. Update tool to the dataset (Make it able to modfiy the csv or pdf files and then upload to the dataset)
+
 ## Try it Out!
 
 Experience the power of Muti_Doc_LLM_Agent firsthand by visiting the deployed application [here](https://mutidocllmagent-austin-jung-2003.streamlit.app/).
