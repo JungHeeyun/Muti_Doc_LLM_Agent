@@ -27,11 +27,9 @@ def file_explorer_page():
     if file_source == 'Upload my own file':
         uploaded_file = st.file_uploader("Upload a ZIP file", type="zip")
     elif file_source == 'Use the default demo file':
-        default_file_path = os.path.join(os.path.dirname(__file__), 'docs', 'demo.zip')
-        try:
-            uploaded_file = open(default_file_path, 'rb')
-        except FileNotFoundError:
-            st.error("The default demo file is not found. Please upload your own file.")
+        if 'default_file_path' not in st.session_state:
+            st.session_state['default_file_path'] = 'demo.zip'  
+        uploaded_file = open(st.session_state['default_file_path'], 'rb')
 
     with st.spinner('Embedding the files...'):
         if uploaded_file is not None:
