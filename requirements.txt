@@ -9,3 +9,4 @@ langgraph==0.0.32
 pdf2image==1.17.0
 langchain==0.1.14
 langchain_experimental==0.0.55
+pypdf==4.1.0
