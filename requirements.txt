@@ -178,7 +178,8 @@ overrides==7.7.0
 packaging==23.2
 pandas==1.5.3
 pathable==0.4.3
-pdf2image==1.17.0 packages.txt poppler-utils
+pdf2image==1.17.0 
+pdf2image packages.txt poppler-utils
 pdf2jpg==1.1
 pdfminer.six==20231228
 pdfplumber==0.11.0
