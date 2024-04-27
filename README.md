@@ -26,6 +26,7 @@ Utilizing LangGraph for seamless structuring of the agent and Streamlit for stre
 1. Pdf Viewer (Multi-Window for the docs(csv or pdf)
 2. Extension of file type (from only pdf, csv to others)
 3. Update tool to the dataset (Make it able to modfiy the csv or pdf files and then upload to the dataset)
+4. Async tool calling
 
 ## Try it Out!
 
