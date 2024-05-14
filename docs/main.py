@@ -50,7 +50,7 @@ def init_app(structure, index, chat_history, faiss_index):
             MessagesPlaceholder(variable_name="messages", optional=True),
         ]
     )
-    llm = ChatOpenAI(model="gpt-4-turbo-2024-04-09", temperature=0)
+    llm = ChatOpenAI(model="gpt-4o-2024-05-13", temperature=0)
     model = {"messages": RunnablePassthrough()} | prompt | llm.bind_tools(tools)
 
 
