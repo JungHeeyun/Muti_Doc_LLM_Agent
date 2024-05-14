@@ -14,7 +14,7 @@ def encode_image_to_base64(image):
     return base64.b64encode(buffered.getvalue()).decode('utf-8')
 
 def ask_gpt_about_image(encoded_image, query):
-    chat = ChatOpenAI(model="gpt-4-turbo-2024-04-09")
+    chat = ChatOpenAI(model="gpt-4o-2024-05-13")
     response = chat.invoke(
         [
             SystemMessage(
