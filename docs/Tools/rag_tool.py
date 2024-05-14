@@ -2,7 +2,7 @@ from langchain_openai import ChatOpenAI
 from langchain_core.messages import HumanMessage, SystemMessage
 
 def rag(faiss_index: int, query: str):
-    chat = ChatOpenAI(model="gpt-4-turbo-2024-04-09", temperature=0)
+    chat = ChatOpenAI(model="gpt-4o-2024-05-13", temperature=0)
 
     docs = faiss_index.similarity_search(query, k=3)
     
